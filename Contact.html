@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agricultural Hub Infromation</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg header-bg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="header-logo" src="image/logo-1.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link header-items" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-items" href="farmingGuides.html">Farming Guides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-items" href="cropDetails.html">Crop Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-items" href="pestControl.html">Pest Control</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-items" href="Contact.html">Contact us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header section -->
+
+
+    <main>
+        
+        <!--page banner  -->
+        <section class="page-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="page-banner-content">
+                            <h4>Contact us</h4>
+                            <a href="index.html">Home</a> / <span>Contact us</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End page banner -->
+
+        <section class="py-5">
+            <div class="container ">
+
+                <div class="row g-4">
+
+                    <!-- 5.a & 5.b: Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-sm rounded-3">
+                            <div class="card-body p-4 p-md-5">
+                                <h2 class="card-title text-success fs-3 mb-4">
+                                    <i class="bi bi-envelope-paper me-2"></i>Send an Inquiry
+                                </h2>
+
+                                <form action="#" method="POST" enctype="multipart/form-data">
+
+                                    <!-- Name Field -->
+                                    <div class="mb-3">
+                                        <label for="userName" class="form-label fw-bold">Full Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="userName" name="name"
+                                            placeholder="Enter your full name" required>
+                                    </div>
+
+                                    <!-- Email Field -->
+                                    <div class="mb-3">
+                                        <label for="userEmail" class="form-label fw-bold">Email Address <span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="userEmail" name="email"
+                                            placeholder="name@example.com" required>
+                                    </div>
+
+                                    <!-- Topic / Area of Expertise Needed -->
+                                    <div class="mb-3">
+                                        <label for="expertiseTopic" class="form-label fw-bold">Topic / Area of Expertise
+                                            <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="expertiseTopic" name="expertise" required>
+                                            <option value="" selected disabled>Select the topic you need advice on
+                                            </option>
+                                            <option value="crop-management">Crop Management & Planning</option>
+                                            <option value="pest-control">Pest & Disease Management</option>
+                                            <option value="soil-health">Soil Health & Fertilization</option>
+                                            <option value="irrigation">Irrigation & Water Use</option>
+                                            <option value="organic-farming">Organic Farming Techniques</option>
+                                            <option value="general-inquiry">General Information Request</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Message / Inquiry Details -->
+                                    <div class="mb-3">
+                                        <label for="userMessage" class="form-label fw-bold">Your Inquiry / Description
+                                            <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="userMessage" name="message" rows="4"
+                                            placeholder="Describe your issue or request in detail..."
+                                            required></textarea>
+                                    </div>
+
+                                    <!-- Optional Attachment Field -->
+                                    <div class="mb-4">
+                                        <label for="fileAttachment" class="form-label fw-bold">Attach Image or Document
+                                            <span class="text-muted fs-7">(Optional)</span></label>
+                                        <input class="form-control" type="file" id="fileAttachment" name="attachment"
+                                            accept="image/*,.pdf,.doc,.docx">
+                                        <div class="form-text">Upload photos of affected crops or supporting documents
+                                            (Max size: 10MB).</div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn btn-success btn-lg w-100 fw-bold">
+                                        <i class="bi bi-send me-2"></i>Submit Inquiry
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5.c: Direct Contact Information -->
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-sm rounded-3 bg-white h-100">
+                            <div class="card-body p-4 p-md-5">
+                                <h2 class="card-title text-success fs-3 mb-4">
+                                    <i class="bi bi-headset me-2"></i>Direct Support
+                                </h2>
+                                <p class="text-muted mb-4">
+                                    Reach out directly to our regional Agricultural Extension Services for immediate
+                                    assistance and expert consultation.
+                                </p>
+
+                                <div class="d-flex mb-4">
+                                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width: 48px; height: 48px;">
+                                        <i class="bi bi-geo-alt fs-5"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h3 class="h6 fw-bold mb-1">Central Extension Office</h3>
+                                        <p class="text-muted mb-0 small">Department of Agricultural
+                                            Extension,<br>Farmgate, Dhaka-1215, Bangladesh</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-4">
+                                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width: 48px; height: 48px;">
+                                        <i class="bi bi-telephone fs-5"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h3 class="h6 fw-bold mb-1">Helpline / Phone</h3>
+                                        <p class="text-muted mb-0 small">Toll-Free: 16123</p>
+                                        <p class="text-muted mb-0 small">Direct: +880 2-9110011</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mb-4">
+                                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width: 48px; height: 48px;">
+                                        <i class="bi bi-envelope fs-5"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h3 class="h6 fw-bold mb-1">Email Advisory</h3>
+                                        <p class="text-muted mb-0 small">support@agriextension.gov.bd</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                        style="width: 48px; height: 48px;">
+                                        <i class="bi bi-clock fs-5"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h3 class="h6 fw-bold mb-1">Office Hours</h3>
+                                        <p class="text-muted mb-0 small">Sunday – Thursday: 9:00 AM – 5:00 PM</p>
+                                        <p class="text-muted mb-0 small">Friday & Saturday: Closed</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p>
+                        © 2026 Agricultural Hub. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer section -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
